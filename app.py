@@ -18,7 +18,7 @@ def scrape():
     print("\n\n\n")
 
     db.mars_facts.insert_one(mars)
-    return "Some scrapped data"
+    return "Scrapped data"
 
 @app.route("/")
 def home():
@@ -28,3 +28,5 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
+    
